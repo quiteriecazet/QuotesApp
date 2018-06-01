@@ -1,0 +1,123 @@
+{ "quotes": [
+    {
+        "id": 1,
+        "quote": "invertébré",
+        "type": "Haddock",
+        "torder": 1
+    },
+    {
+        "id": 2,
+        "quote": "troglodyte",
+        "type": "Hadoque",
+        "order": 1
+    },
+    {
+        "id": 3,
+        "quote": "cornichon",
+        "type": "Haddock",
+        "order": 1
+    },
+    {
+        "id": 4,
+        "quote": "doryphore",
+        "type": "Haddock",
+        "order": 1
+    },
+    {
+        "id": 5,
+        "quote": "bougre",
+        "type": "Hadoque",
+        "order": 1
+    },
+    {
+        "id": 1,
+        "quote": "d'ectoplasme",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 2,
+        "quote": "d'extrait d'hydrocarbure",
+        "type": "Haddock",
+        "order": 2
+    },
+    {
+        "id": 3,
+        "quote": "diplômé",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 4,
+        "quote": "des Alpes",
+        "type": "Haddock",
+        "order": 2
+    },
+    {
+        "id": 5,
+        "quote": "d'emplâtre",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 6,
+        "quote": "d'eau douce",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 7,
+        "quote": "de zouave",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 8,
+        "quote": "de json-server du pauvre",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 9,
+        "quote": "d'emplâtre",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 10,
+        "quote": "d'emplâtre",
+        "type": "Hadoque",
+        "order": 2
+    },
+    {
+        "id": 1,
+        "quote": "à roulettes",
+        "type": "Haddock",
+        "order": 3
+    },
+    {
+        "id": 2,
+        "quote": "de mille tonnerres de Brest",
+        "type": "Hadoque",
+        "order": 3
+    },
+    {
+        "id": 3,
+        "quote": "de mille sabords",
+        "type": "Haddock",
+        "order": 3
+    },
+    {
+        "id": 4,
+        "quote": "à la graisse de trombone à coulisse",
+        "type": "Hadoque",
+        "order": 3
+    },
+    {
+        "id": 5,
+        "quote": "mal empaillé",
+        "type": "Haddock",
+        "order": 3
+    }
+]
+}

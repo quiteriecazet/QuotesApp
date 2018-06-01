@@ -1,0 +1,26 @@
+<div class="container">
+
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personnalisation
+      </mat-panel-title>
+      <mat-panel-description>
+        Type et nombre de citations voulues
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-radio-group [(ngModel)]="type">
+        <mat-radio-button value="Haddock">Capitaine Haddock</mat-radio-button><br>
+        <mat-radio-button value="Hadoque">Chevalier de Hadoque</mat-radio-button><br>
+        <span *ngIf="type != null">Ahhh, les expressions de ce bon vieux {{type}}</span>
+    </mat-radio-group>
+      <mat-slider max="5" min="1" step="1" thumbLabel tickInterval="1" [(ngModel)]="number"></mat-slider>
+      <p *ngIf="number > 1"> C'est parti pour {{number}} citations!</p>
+      <p *ngIf="number == 1"> C'est parti pour {{number}} citation!</p>
+
+      <button mat-fab color="primary" (click)="getQuotes(type,number)">Go!</button>
+  </mat-expansion-panel>
+</mat-accordion>
+
+</div>
