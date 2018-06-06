@@ -17,7 +17,7 @@ export class QuotesService {
 
   getQuotes(type: string, number: number, order: number): Observable<Quote[]> {
     console.log(`hé c'est moi le service, tiens:` + type + ' eeeeet ' + number);
-    return this.http.get<Quote[]>(API_URL + '?type=' + type + '&order=' + order);
+    return this.http.get<Quote[]>(API_URL + '?type=' + type + '&order=' + order + '&_limit=' + number);
   }
 }
 
