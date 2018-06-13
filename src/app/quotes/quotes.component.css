@@ -1,9 +1,32 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.mat-radio-button {
+    margin: 10px;
 }
 
-mat-radio-button {
-    margin: 10px;
+li {
+  list-style: none;
+}
+
+.mat-card {
+  margin: 30px;
+  box-shadow: none !important;
+}
+
+.mat-slider {
+  margin: 50px;
+}
+
+.mat-radio-button, .mat-card {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.mat-grid-tile, .mat-card, button {
+  border: 1px #DC593B solid;
+}
+
+.mat-grid-tile-header, button {
+  background-color: white !important;
+  color: #DC593B !important;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
 }

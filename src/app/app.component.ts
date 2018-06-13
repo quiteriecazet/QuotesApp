@@ -9,5 +9,5 @@ import {MatToolbarModule, MatRadioModule} from '@angular/material';
 })
 
 export class AppComponent {
-  title = 'Generator';
+  title = 'Générateur Ad Hoc';
 }

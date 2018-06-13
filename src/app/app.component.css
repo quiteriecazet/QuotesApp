@@ -1,1 +1,8 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-toolbar {
+  background-color: #DC593B !important;
+  color: white;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

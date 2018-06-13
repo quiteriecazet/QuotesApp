@@ -14,6 +14,8 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatSliderModule,
     MatCardModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatChipsModule
   ],
   providers: [
     QuotesService

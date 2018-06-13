@@ -1,31 +1,61 @@
 { "quotes": [
     {
         "id": 1,
-        "quote": "invertébré",
+        "quote": "Invertébré",
         "type": "Haddock",
         "order": 1
     },
     {
         "id": 2,
-        "quote": "troglodyte",
+        "quote": "Troglodyte",
         "type": "Hadoque",
         "order": 1
     },
     {
         "id": 3,
-        "quote": "cornichon",
+        "quote": "Cornichon",
         "type": "Haddock",
         "order": 1
     },
     {
         "id": 4,
-        "quote": "doryphore",
-        "type": "Haddock",
+        "quote": "Doryphore",
+        "type": "Hadoque",
         "order": 1
     },
     {
         "id": 5,
-        "quote": "bougre",
+        "quote": "Bougre",
+        "type": "Hadoque",
+        "order": 1
+    },
+    {
+        "id": 6,
+        "quote": "Cannibale",
+        "type": "Haddock",
+        "order": 1
+    },
+    {
+        "id": 7,
+        "quote": "Cloporte",
+        "type": "Hadoque",
+        "order": 1
+    },
+    {
+        "id": 8,
+        "quote": "Trompe-la-mort",
+        "type": "Haddock",
+        "order": 1
+    },
+    {
+        "id": 9,
+        "quote": "Nyctalope",
+        "type": "Haddock",
+        "order": 1
+    },
+    {
+        "id": 10,
+        "quote": "Lépidoptère",
         "type": "Hadoque",
         "order": 1
     },
@@ -62,7 +92,7 @@
     {
         "id": 6,
         "quote": "d'eau douce",
-        "type": "Hadoque",
+        "type": "Haddock",
         "order": 2
     },
     {
@@ -73,8 +103,8 @@
     },
     {
         "id": 8,
-        "quote": "de json-server du pauvre",
-        "type": "Hadoque",
+        "quote": "de parasite",
+        "type": "Haddock",
         "order": 2
     },
     {
@@ -85,14 +115,14 @@
     },
     {
         "id": 10,
-        "quote": "d'emplâtre",
-        "type": "Hadoque",
+        "quote": "de vandale",
+        "type": "Haddock",
         "order": 2
     },
     {
         "id": 1,
         "quote": "à roulettes",
-        "type": "Haddock",
+        "type": "Hadoque",
         "order": 3
     },
     {
@@ -116,6 +146,36 @@
     {
         "id": 5,
         "quote": "mal empaillé",
+        "type": "Haddock",
+        "order": 3
+    },
+    {
+        "id": 6,
+        "quote": "à la démarche de sapajou",
+        "type": "Haddock",
+        "order": 3
+    },
+    {
+        "id": 7,
+        "quote": "sinistré",
+        "type": "Hadoque",
+        "order": 3
+    },
+    {
+        "id": 8,
+        "quote": "des Caparthes",
+        "type": "Haddock",
+        "order": 3
+    },
+    {
+        "id": 9,
+        "quote": "de potence",
+        "type": "Hadoque",
+        "order": 3
+    },
+    {
+        "id": 10,
+        "quote": "mal embouché",
         "type": "Haddock",
         "order": 3
     }

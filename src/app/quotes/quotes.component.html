@@ -1,30 +1,42 @@
-<div class="container">
+<mat-grid-list cols="4" rowHeight="200px">
+  <mat-grid-tile [colspan]="3" [rowspan]="1">
 
-<mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Personnalisation
-      </mat-panel-title>
-      <mat-panel-description>
-        Type et nombre de citations voulues
-      </mat-panel-description>
-    </mat-expansion-panel-header>
+    <mat-grid-tile-header>Choix de l'auteur</mat-grid-tile-header>
     <mat-radio-group [(ngModel)]="type">
-        <mat-radio-button value="Haddock">Capitaine Haddock</mat-radio-button><br>
-        <mat-radio-button value="Hadoque">Chevalier de Hadoque</mat-radio-button><br>
-        <span *ngIf="type != null">Ahhh, les expressions de ce bon vieux {{type}}</span>
+      <mat-radio-button value="Haddock">Capitaine Haddock</mat-radio-button>
+      <br>
+      <mat-radio-button value="Hadoque">Chevalier de Hadoque</mat-radio-button>
+      <br>
     </mat-radio-group>
-      <mat-slider max="5" min="1" step="1" thumbLabel tickInterval="1" [(ngModel)]="number"></mat-slider>
-      <p *ngIf="number > 1"> C'est parti pour {{number}} citations!</p>
-      <p *ngIf="number == 1"> C'est parti pour {{number}} citation!</p>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="2">
+    <div *ngIf="type == 'Haddock'">
+      <img src="../../assets/images/Haddock.jpg">
+    </div>
+    <div *ngIf="type == 'Hadoque'">
+        <img src="../../assets/images/Hadoque.jpg">
+      </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <p *ngIf="type != null">Ahhh, les expressions de ce bon vieux {{type}}</p>
+    <p *ngIf="type == null && number > 0">Une fois l'auteur choisi</p>
+    <p *ngIf="number > 1">, c'est parti pour {{number}}!</p>
+    <p *ngIf="number == 1">, c'est parti pour {{number}}!</p>
+    <p *ngIf="number == 0">... Et si vous choisissiez un nombre de citations?</p>
 
-      <button mat-fab color="primary" (click)="getQuotes(type,number)">Go!</button>
-  </mat-expansion-panel>
-</mat-accordion>
-<ul class="heroes">
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-grid-tile-header>Choix du nombre de citations</mat-grid-tile-header>
+    <mat-slider max="5" min="0" step="1" thumbLabel tickInterval="1" [(ngModel)]="number"></mat-slider>
+
+    <button mat-fab (click)="getQuotes(type,number)">Go</button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ul>
   <li *ngFor="let quote of quotes">
-    <span>{{quote.id}}</span> {{quote.quote}}
+    <mat-card>
+      <mat-card-content>Espèce de... {{quote}}</mat-card-content>
+    </mat-card>
   </li>
 </ul>
-</div>
