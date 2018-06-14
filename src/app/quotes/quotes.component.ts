@@ -43,7 +43,7 @@ export class QuotesComponent implements OnInit {
       for (let i = 0; i < res[0].length; i++) {
         this.quotes[i] = (res[0][Math.floor(Math.random() * res[0].length)].quote + ' '
          + res[1][Math.floor(Math.random() * res[1].length)].quote + ' '
-         + res[2][Math.floor(Math.random() * res[2].length)].quote) + ' ';
+         + res[2][Math.floor(Math.random() * res[2].length)].quote) + '.';
       }
       number = number - 1;
     }
