@@ -1,4 +1,4 @@
-<mat-grid-list cols="4" rowHeight="200px">
+<mat-grid-list cols="4" rowHeight="300px">
   <mat-grid-tile [colspan]="3" [rowspan]="1">
 
     <mat-grid-tile-header>Choix de l'auteur</mat-grid-tile-header>
@@ -14,19 +14,23 @@
       <img src="../../assets/images/Haddock.jpg">
     </div>
     <div *ngIf="type == 'Hadoque'">
-        <img src="../../assets/images/Hadoque.jpg">
-      </div>
+      <img src="../../assets/images/Hadoque.jpg">
+    </div>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="2" [rowspan]="1">
     <p *ngIf="type != null">Ahhh, les expressions de ce bon vieux {{type}}</p>
     <p *ngIf="type == null && number > 0">Une fois l'auteur choisi</p>
     <p *ngIf="number > 1">, c'est parti pour {{number}}!</p>
     <p *ngIf="number == 1">, c'est parti pour {{number}}!</p>
-    <p *ngIf="number == 0">... Et si vous choisissiez un nombre de citations?</p>
+    <div *ngIf="number == 0 && type == undefined">
+      <img class="haddock-img" src="../../assets/images/Haddock-2.jpg">
+    </div>
+    <p *ngIf="number == 0 && type != undefined">... Et si vous choisissiez un nombre de citations?</p>
+
 
   </mat-grid-tile>
   <mat-grid-tile [colspan]="1" [rowspan]="1">
-      <mat-grid-tile-header>Choix du nombre de citations</mat-grid-tile-header>
+    <mat-grid-tile-header>Choix du nombre de citations</mat-grid-tile-header>
     <mat-slider max="5" min="0" step="1" thumbLabel tickInterval="1" [(ngModel)]="number"></mat-slider>
 
     <button mat-fab (click)="getQuotes(type,number)">Go</button>
@@ -40,3 +44,8 @@
     </mat-card>
   </li>
 </ul>
+
+<div *ngIf="quotes != 0" align="center">
+    <button mat-raised-button (click)="getQuotes(type, number)">Encore, {{type}}!</button>
+  <button mat-raised-button (click)="removeQuotes(quotes, type, number)">J'en ai assez lu comme ça</button>
+</div>
