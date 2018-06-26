@@ -22,12 +22,15 @@ import 'rxjs/add/operator/catch';
 })
 export class QuotesComponent implements OnInit {
   quotes: any[] = [];
+  type: any;
+  number: any;
   panelOpenState: false;
   private test: string;
   constructor(private quotesService: QuotesService) {}
 
   ngOnInit() {
     this.quotes = [];
+    this.number = 0;
   }
 
   getQuotes(type, number) {
@@ -43,11 +46,17 @@ export class QuotesComponent implements OnInit {
       for (let i = 0; i < res[0].length; i++) {
         this.quotes[i] = (res[0][Math.floor(Math.random() * res[0].length)].quote + ' '
          + res[1][Math.floor(Math.random() * res[1].length)].quote + ' '
-         + res[2][Math.floor(Math.random() * res[2].length)].quote) + '.';
+         + res[2][Math.floor(Math.random() * res[2].length)].quote) + ' ';
       }
       number = number - 1;
     }
       console.log(this.quotes);
     });
+  }
+
+  removeQuotes(quotes, type, number) {
+    this.quotes = [];
+    this.type = undefined;
+    this.number = 0;
   }
 }
