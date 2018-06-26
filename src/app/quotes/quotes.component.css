@@ -30,3 +30,12 @@ li {
   letter-spacing: 3px;
   font-weight: 700;
 }
+
+.remove-btn {
+  margin-left: 38%;
+}
+
+.haddock-img {
+  width: 25%;
+    margin-left: 38%;
+}
